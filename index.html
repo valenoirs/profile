@@ -17,29 +17,62 @@
         padding: 0;
         margin: 0;
       }
+
       body{
         background-color: #F8F9FAFF;
-        background-image: url("assets/bg.png");
+        /* background-image: url("assets/bg.png"); */
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: 500px 500px;
+
+        position: relative;
+        min-height: 100%;
       }
 
       main {
-        /* padding-top: 3.5rem; */
-        padding: 3.5rem 10% 3.5rem 10%;
+        padding-bottom: 15rem;
       }
 
       /* Override Bootstrap */
       .navbar {
-        background-color: #F8F9FAFF;
+        background-color: rgba(25, 135, 84, 0.9);
         /* background-color: rgba(25, 135, 84, 0.300); */
       }
 
       .navbar-collapse {
         justify-content: center;
         font-weight: 350;
+      }
+
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+        /* background-color: #F5F5F5; */
+        background-color: #baeebd;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        /* background-color: #F5F5F5; */
+        background-color: #baeebd;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.1);
+        background-image: -webkit-linear-gradient(330deg, #baeeda 0%, #2F9265FF 100%);
+        background-image: linear-gradient(120deg, #baeebd 0%, #2F9265FF 100%);
+        /* background-image: -webkit-linear-gradient(330deg, #baeeda 0%, #f5576c 100%);
+        background-image: linear-gradient(120deg, #baeebd 0%, #f5576c 100%); */
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #2F9265FF;
       }
     </style>
   </head>
@@ -48,7 +81,7 @@
     <!-- Header -->
     <header>
       <!-- Navigation -->
-      <nav class="navbar fixed-top navbar-expand-lg">
+      <nav class="navbar navbar-dark fixed-top navbar-expand-lg">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,16 +89,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
+                <a class="nav-link" href="#intro">Intro</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link"  href="#experience">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="#certification">Certification</a>
+                <a class="nav-link"  href="#project">Project</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="#project">Project</a>
+                <a class="nav-link"  href="#certification">Certification</a>
               </li>
             </ul>
           </div>
@@ -77,414 +113,300 @@
 
     <!-- Main -->
     <main>
-      <!-- About -->
-      <div id="about" class="container-fluid">
-        <div class="row mt-5">
-          <!-- Title -->
-          <div class="col mb-lg-0 mb-5 text-center">
-              <img src="assets/profile-pic.jpg" alt="" style="width: 200px; border-radius: 200px;">
+      <div class="container" style="padding-top: 3.5rem;">
+      </div>
+      <!-- Intro -->
+      <div id="intro" class="container-fluid mb-5">
+        <div class="row p-5" style="background-color: rgb(25, 135, 84, 0.9); height: 30rem;">
+
+          <div class="col mb-lg-0 text-center align-self-center">
+            <img src="assets/profile-pic.jpg" alt="" style="width: 200px; border-radius: 200px;">
           </div>
-          <div class="col-lg-9 text-sm-start text-center">
-            <h4 class="text-success">About</h4>
-            <p class="text-secondary">Hi there!, my name is Lucky. i'm currently studying Informatics Engineering at Manado State University. Interested in software development, tinkering hardware, and learn something new.</p>
-            <p class="text-secondary">p.s. Still working on this page, might update soon!</p>
+
+          <div class="col-lg-9 mt-lg-0 mt-4 text-sm-start text-center align-self-center">
+            <p class="text-light">Hi Everyone! i'm</p>
+            <h1 class="text-light">Lucky Wuntu</h1>
+            <h5 class="text-light display-5">Freelance Web & Software Developer</h5>
+
+            <!-- <button class="btn btn-success">Contact me!</button> -->
           </div>
           
         </div>
       </div>
 
-      <!-- Education -->
-      <div id="education" class="container-fluid">
-        <div class="row mt-5 mb-5 ps-md-5 pe-md-5">
-          <!-- Title -->
-          <div class="row mt-4">
-            <div class="col text-center">
-              <h4 class="text-success">Education</h4>
+      <!-- About -->
+      <div id="about" class="container-fluid mb-5">
+        <div class="row p-5">
+
+          <div class="row mb-4">
+            <div class="col">
+              <h4 class="text-success">ABOUT ME</h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p class="text-secondary"><em>I'm currently studying Informatics Engineering at Manado State University. Interested in software development, tinkering hardware, and learn something new.</em></p>
+              <p class="text-secondary"><em>p.s. Still working on this page, might update soon!</em></p>
             </div>
           </div>
           
-          <!-- University -->
-          <div class="row mt-4">
-            <div class="col text-center">
-              <h6>Manado State University</h6>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-center">
-              <p class="text-secondary">Informatics Engineering (2018 - Present)</p>
-            </div>
-          </div>
-
-          <!-- High School -->
-          <div class="row mt-4">
-            <div class="col text-center">
-              <h6>Tondano State High School</h6>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-center">
-              <p class="text-secondary">Science (2015 - 2018)</p>
-            </div>
-          </div>
-
         </div>
       </div>
 
       <!-- Tech Used -->
-      <div id="tech" class="container-fluid">
-        <div class="row mt-5 mb-5 ps-md-5 pe-md-5">
-          <!-- Title -->
-          <div class="row mt-4">
-            <div class="col text-center">
-              <h4 class="text-success">Tech Stack</h4>
-            </div>
-          </div>
+      <div id="tech" class="container-fluid mb-5">
+        <div class="row p-5" style="background-color: rgb(25, 135, 84, 0.9);">
           
           <div class="row">
-            <div class="col">
-              <!-- Language -->
-              <div class="row mt-4">
-                <div class="col text-center">
-                  <h6>Language</h6>
+            <div class="col-sm-6 col-12 align-self-center text-center">
+              <img class="img-fluid" src="assets/bg.png" alt="" style="height: 17rem;">
+            </div>
+
+            <div class="col-sm-6 col-12 text-sm-start text-end">
+
+              <div class="row mb-4">
+                <div class="col">
+                  <h4 class="text-light">TECH STACK</h4>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <h6 class="text-light">Language</h6>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  <p class="text-light"><em>Javascript • C# • HTML • CSS</em></p>
                 </div>
               </div>
               <div class="row">
-                <div class="col text-center">
-                  <p class="text-secondary">Javascript • C# • HTML • CSS</p>
+                <div class="col">
+                  <h6 class="text-light">Framework</h6>
                 </div>
               </div>
-            </div>
-
-            <div class="col">
-              <!-- Tools -->
-              <div class="row mt-4">
-                <div class="col text-center">
-                  <h6>Tools</h6>
+              <div class="row mb-2">
+                <div class="col">
+                  <p class="text-light"><em>NodeJS • ExpressJS • .NET • Bootstrap</em></p>
                 </div>
               </div>
               <div class="row">
-                <div class="col text-center">
-                  <p class="text-secondary">Visual Studio Code • Visual Studio • Git</p>
+                <div class="col">
+                  <h6 class="text-light">Database</h6>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col">
-              <!-- Framework -->
-              <div class="row mt-4">
-                <div class="col text-center">
-                  <h6>Framework</h6>
+              <div class="row mb-2">
+                <div class="col">
+                  <p class="text-light"><em>MongoDB</em></p>
                 </div>
               </div>
               <div class="row">
-                <div class="col text-center">
-                  <p class="text-secondary">NodeJS • ExpressJS • .NET • Bootstrap</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <!-- Databases -->
-              <div class="row mt-4">
-                <div class="col text-center">
-                  <h6>Databases</h6>
+                <div class="col">
+                  <h6 class="text-light">Tools</h6>
                 </div>
               </div>
               <div class="row">
-                <div class="col text-center">
-                  <p class="text-secondary">MongoDB</p>
+                <div class="col">
+                  <p class="text-light"><em>Visual Studio Code • Visual Studio • Git</em></p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- <div class="row mt-4">
-            <div class="col text-center">
-              <h6>Technical Skills</h6>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-center">
-              <p class="text-secondary">Back-End Developer • Front-End Developer</p>
-            </div>
-          </div>
-        </div> -->
-
-          <!-- <div class="row mt-4">
-            <div class="col text-center">
-              <h5>Language</h5>
-            </div>
-          </div>
-          <div class="row mt-4" style="padding:  25px 25% 0 25%;">
-            <div class="col text-center">
-              <img src="assets/js.png" style="height: 100px;" alt="">
-              <p><strong>Javascript</strong></p>
-            </div>
-            <div class="col text-center">
-              <img src="assets/cs.png" style="height: 100px;" alt="">
-              <p><strong>C#</strong></p>
-            </div>
-            <div class="col text-center">
-              <img src="assets/html.png" style="height: 100px;" alt="">
-              <p><strong>HTML</strong></p>
-            </div>
-            <div class="col text-center">
-              <img src="assets/css.png" style="height: 100px;" alt="">
-              <p><strong>CSS</strong></p>
-            </div>
-          </div>
-          <div class="row" style="padding:  25px 25% 0 25%;">
-            <div class="col text-center">
-              <img src="assets/nodejs.png" style="height: 100px;" alt="">
-              <p><strong>NodeJS</strong></p>
-            </div>
-            <div class="col text-center">
-              <img src="assets/mongoleaf.png" style="height: 100px;" alt="">
-              <p><strong>MongoDB</strong></p>
-            </div>
-            <div class="col text-center">
-              <img src="assets/net.png" style="height: 100px;" alt="">
-              <p><strong>.NET</strong></p>
-            </div>
-            <div class="col text-center">
-              <img src="assets/express.png" style="height: 100px;" alt="">
-              <p><strong>Express</strong></p>
-            </div>
-          </div>
-          <div class="row" style="padding:  25px 25% 0 25%;">
-            <div class="col text-center">
-              <img src="assets/bootstrap.png" style="height: 100px;" alt="">
-              <p><strong>Bootstrap</strong></p>
-            </div>
-          </div> -->
+          
 
         </div>
       </div>
       
       <!-- Experience -->
-      <div id="experience" class="container-fluid">
-        <div class="row mt-5 mb-5 ps-md-5 pe-md-5">
-          <!-- Title -->
-          <div class="row mt-4">
-            <div class="col text-center">
-              <h4 class="text-success">Experience</h4>
+      <div id="experience" class="container-fluid mb-5">
+        <div class="row p-5">
+
+          <div class="row mb-4">
+            <div class="col">
+              <h4 class="text-success">EXPERIENCE</h4>
             </div>
           </div>
 
-          <div class="row mt-4">
-            <div class="col text-center">
-              <h6>Freelance</h6>
+          <div class="row">
+            <div class="col">
+              <h6 class="text-success">• Freelance</h6>
             </div>
           </div>
           <div class="row">
-            <div class="col text-center">
+            <div class="col">
               <p class="text-secondary">Web & Software Development (2020 - Present)</p>
             </div>
           </div>
 
-          <div class="row mt-4">
-            <div class="col text-center">
-              <h6>Department of Communication And Informatics</h6>
+          <div class="row">
+            <div class="col">
+              <h6 class="text-success">• Department of Communication And Informatics</h6>
             </div>
           </div>
           <div class="row">
-            <div class="col text-center">
+            <div class="col">
               <p class="text-secondary">E-Government (2021)</p>
             </div>
           </div>
         </div>
       </div>
       
-      <!-- Certification -->
-      <div id="certification" class="container-fluid">
-        <div class="row mt-5 mb-5 ps-md-5 pe-md-5">
-          <!-- Title -->
-          <div class="row mt-4">
-            <div class="col text-center">
-              <h4 class="text-success">Certification</h4>
-            </div>
-          </div>
-          
-          <!-- First Row -->
-          <div class="row">
-            <div class="col">
-              <div class="row mt-4" style="height: 50px;">
-                <div class="col text-center">
-                  <h6>FCC Back End Development and APIs (2022)</h6>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col text-center">
-                  <img src="assets/certification/fcc-backend.png" style="height: 180px; border: 1px solid #6C757DFF;" alt="">
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="row mt-4" style="height: 50px;">
-                <div class="col text-center">
-                  <h6>FCC Javascript Algorithms and Data Structures (2022)</h6>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col text-center">
-                  <img src="assets/certification/fcc-javascript.png" style="height: 180px; border: 1px solid #6C757DFF;" alt="">
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="row mt-4" style="height: 50px;">
-                <div class="col text-center">
-                  <h6>FCC Quality Assurance (2022)</h6>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col text-center">
-                  <img src="assets/certification/fcc-qa.png" style="height: 180px; border: 1px solid #6C757DFF;" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second Row -->
-          <div class="row">
-            <div class="col">
-              <div class="row mt-4" style="height: 50px;">
-                <div class="col text-center">
-                  <h6>MDBU M001 : MongoDB Basics (2022)</h6>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col text-center">
-                  <img src="assets/certification/M001_proof_of_completion.jpg" style="height: 180px; border: 1px solid #6C757DFF;" alt="">
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="row mt-4" style="height: 50px;">
-                <div class="col text-center">
-                  <h6>MDBU M220JS : MongoDB for Javascript Developer (2022)</h6>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col text-center">
-                  <img src="assets/certification/M220JS_proof_of_completion.jpg" style="height: 180px; border: 1px solid #6C757DFF;" alt="">
-                </div>
-              </div>
-            </div>
-    
-            <div class="col">
-              <div class="row mt-4" style="height: 50px;">
-                <div class="col text-center">
-                  <h6>MDBU M150 : Authentication & Authorization (2022)</h6>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col text-center">
-                  <img src="assets/certification/M150_proof_of_completion.jpg" style="height: 180px; border: 1px solid #6C757DFF;" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-
-        <!-- Third Row -->
-        <div class="row">
-          <div class="col">
-            <div class="row mt-4" style="height: 50px;">
-              <div class="col text-center">
-                <h6>IAII E-Business (2019)</h6>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col text-center">
-                <img src="assets/certification/iaii-e-business.png" style="height: 180px; border: 1px solid #6C757DFF;" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        </div>
-      </div>
-
       <!-- Project -->
-      <div id="project" class="container-fluid">
-        <div class="row mt-5 mb-5 ps-md-5 pe-md-5">
-          <!-- Title -->
-          <div class="row mt-4">
-            <div class="col text-center">
-              <h4 class="text-success">Project</h4>
+      <div id="project" class="container-fluid mb-5">
+        <div class="row p-5" style="background-color: rgb(25, 135, 84, 0.9);">
+
+          <div class="row mb-4">
+            <div class="col">
+              <h4 class="text-light text-center display">LATEST PROJECT</h4>
             </div>
           </div>
 
-          <!-- First Row -->
+          <div class="row mb-4 justify-content-center">
+            <div class="col-md-10">
+              <div id="carouselExampleCaptions" class="carousel carousel-dark slide mb-4" data-bs-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/project/wailan.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h6 class="text-success">WAILAN (2021)</h6>
+                      <a href="https://github.com/valenoirs/WAILAN" target="_blank" style="text-decoration: none; color: gray;">https://github.com/valenoirs/WAILAN</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/project/clovr.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h6 class="text-success">CLOVR E-Commerce (2021)</h6>
+                      <a href="https://github.com/valenoirs/codename-UDLSM-M" target="_blank" style="text-decoration: none; color: gray;">https://github.com/valenoirs/codename-UDLSM-M</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/project/ukm.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h6 class="text-success">De La Salle Manado University UKM (2021)</h6>
+                      <a href="https://github.com/valenoirs/codename-UDLSM-D" target="_blank" style="text-decoration: none; color: gray;">https://github.com/valenoirs/codename-UDLSM-D</a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
           <div class="row">
-            <div class="col">
-              <div class="row mt-4" style="height: 50px;">
-                <div class="col text-center">
-                  <h6>WAILAN (2021)</h6>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col text-center">
-                  <img src="assets/project/wailan.jpg" style="width: 260px; border: 1px solid #6C757DFF;" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <figcaption class="blockquote-footer text-center">
-                  <a href="https://github.com/valenoirs/WAILAN" style="text-decoration: none; color: gray;">https://github.com/valenoirs/WAILAN</a>
-                </figcaption>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="row mt-4" style="height: 50px;">
-                <div class="col text-center">
-                  <h6>CLOVR E-Commerce (2021)</h6>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col text-center">
-                  <img src="assets/project/clovr.jpeg" style="width: 260px; border: 1px solid #6C757DFF;" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <figcaption class="blockquote-footer text-center">
-                  <a href="https://github.com/valenoirs/codename-UDLSM-M" style="text-decoration: none; color: gray;">https://github.com/valenoirs/codename-UDLSM-M</a>
-                </figcaption>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="row mt-4" style="height: 50px;">
-                <div class="col text-center">
-                  <h6>De La Salle Manado University UKM (2021)</h6>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col text-center">
-                  <img src="assets/project/ukm.jpeg" style="width: 260px; border: 1px solid #6C757DFF;" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <figcaption class="blockquote-footer text-center">
-                  <a href="https://github.com/valenoirs/codename-UDLSM-D" style="text-decoration: none; color: gray;">https://github.com/valenoirs/codename-UDLSM-D</a>
-                </figcaption>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mt-4">
-            <div class="col text-center">
+            <div class="col text-light text-center">
               More Project at:
             </div>
           </div>
           <div class="row">
             <div class="col text-center">
-              <h6><img src="assets/green-github.png" style="width: 2rem;" alt=""><a href="https://github.com/valenoirs" target="_blank" style="text-decoration: none; color: #198754;"> https://github.com/valenoirs</a></h6>
+              <h6><img src="assets/github.png" style="width: 2rem;" alt=""><a href="https://github.com/valenoirs" target="_blank" style="text-decoration: none; color: black;"> https://github.com/valenoirs</a></h6>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Certification -->
+      <div id="certification" class="container-fluid mb-5">
+        <div class="row p-sm-5 p-0">
+          <!-- Title -->
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h4 class="text-success">Certification</h4>
+            </div>
+          </div>
+          
+          <div class="accordion" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  FCC Responsive Web Design (2022)
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <img class="img-fluid" src="assets/certification/fcc-backend.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  FCC Quality Assurance (2022)
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <img class="img-fluid" src="assets/certification/fcc-backend.png" alt="">
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  MDBU M220JS : MongoDB for Javascript Developer (2022)
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <img class="img-fluid" src="assets/certification/fcc-backend.png" alt="">
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  MDBU M150 : Authentication & Authorization (2022)
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <img class="img-fluid" src="assets/certification/fcc-backend.png" alt="">
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  MDBU M001 : MongoDB Basics (2022)
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <img class="img-fluid" src="assets/certification/fcc-backend.png" alt="">
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                  FCC Back End Development and APIs (2022)
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                <img class="img-fluid" src="assets/certification/fcc-backend.png" alt="">
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                  FCC Javascript Algorithms and Data Structures (2022)
+                </button>
+              </h2>
+              <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                <img class="img-fluid" src="assets/certification/fcc-backend.png" alt="">
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                  IAII E-Business (2019)
+                </button>
+              </h2>
+              <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                <img class="img-fluid" src="assets/certification/fcc-backend.png" alt="">
+              </div>
             </div>
           </div>
 
@@ -493,10 +415,10 @@
 
     </main>
 
-    <footer>
-      <div class="container-fluid" style="background-color: rgba(25, 135, 84, 0.700); height: 12rem;">
-        <div class="row d-flex align-items-center">
-          <div class="row mt-5 ps-md-5 pe-md-5">
+    <footer class="footer" style="position: absolute; bottom: 0; width: 100%;">
+      <div class="container-fluid" style="background-color: rgba(25, 135, 84, 0.700);">
+        <div class="row d-flex align-items-center" style="height: 100%;">
+          <div class="row align-items-center mt-5 mb-4">
             <div class="col-md-3 col-sm-12 text-center">
               <p><img src="assets/phone.png" style="width: 2rem;" alt=""> +62 858-2334-1882</p>
             </div>
