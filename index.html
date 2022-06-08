@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ルキ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-    <!-- Bootstrap Icon -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-
-    <!-- App icon -->
+    
     <link rel="shortcut icon" type="image/png" href="assets/icon.png" />
-
     <style>
       * {
         padding: 0;
@@ -120,13 +117,13 @@
       </div>
       <!-- Intro -->
       <div id="intro" class="container-fluid mb-5">
-        <div class="row p-5" style="background-color: rgb(25, 135, 84, 0.9); height: 38rem;">
+        <div class="row p-5" style="background-color: rgb(25, 135, 84, 0.9); height: 38rem;" data-aos="slide-down">
 
-          <div class="col mb-lg-0 text-center align-self-center">
+          <div class="col mb-lg-0 text-center align-self-center" data-aos="slide-down">
             <img src="assets/profile-pic.webp" alt="" style="width: 225px; border-radius: 200px;">
           </div>
 
-          <div class="col-lg-8 mt-lg-0 mt-4 text-sm-start text-center align-self-center">
+          <div class="col-lg-8 mt-lg-0 mt-4 text-sm-start text-center align-self-center" data-aos="slide-down">
             <p class="text-light">Hi There! i'm</p>
             <h1 class="text-light">Lucky</h1>
             <h5 class="text-light display-5">Freelance Web & Desktop App Developer</h5>
@@ -139,7 +136,7 @@
 
       <!-- About -->
       <div id="about" class="container-fluid mb-5">
-        <div class="row p-5">
+        <div class="row p-5" data-aos="fade-right">
 
           <div class="row mb-4">
             <div class="col">
@@ -163,13 +160,13 @@
         <div class="row p-5" style="background-color: rgb(25, 135, 84, 0.9);">
           
           <div class="row">
-            <div class="col-sm-6 d-sm-block d-none col-12 align-self-center text-center">
+            <div class="col-sm-6 d-sm-block d-none col-12 align-self-center text-center" data-aos="fade-left">
               <img class="img-fluid" src="assets/bg.png" alt="" style="height: 15rem;">
             </div>
 
             <!-- <div class="col-sm-6 col-12 mt-lg-0 mt-5 text-sm-start text-end"> -->
             <!-- <div class="col-sm-6 col-12 text-sm-start text-end"> -->
-            <div class="col-sm-6 col-12">
+            <div class="col-sm-6 col-12" data-aos="fade-right">
 
               <div class="row mb-4">
                 <div class="col">
@@ -227,7 +224,7 @@
       
       <!-- Experience -->
       <div id="experience" class="container-fluid mb-5">
-        <div class="row p-5">
+        <div class="row p-5" data-aos="fade-right">
 
           <div class="row mb-4">
             <div class="col">
@@ -261,7 +258,7 @@
       
       <!-- Work -->
       <div id="work" class="container-fluid mb-5">
-        <div class="row justify-content-center" style="background-color: rgb(25, 135, 84, 0.9);">
+        <div class="row justify-content-center" style="background-color: rgb(25, 135, 84, 0.9);" data-aos="slide-up">
 
           <div class="row mb-4 mt-5">
             <div class="col">
@@ -323,7 +320,7 @@
 
       <!-- Certificate -->
       <div id="certificate" class="container-fluid mb-5">
-        <div class="row p-sm-5 p-0 justify-content-center">
+        <div class="row p-sm-5 p-0 justify-content-center" data-aos="fade-down">
           <!-- Title -->
           <div class="row mb-4">
             <div class="col text-center">
@@ -423,7 +420,7 @@
 
       <!-- Back To Top -->
       <div class="container-fluid">
-        <div class="row">
+        <div class="row" data-aos="fade-right">
           <div class="col text-center">
             <a href="#intro" class="btn btn-outline-success">Back To Top</a>
           </div>
@@ -457,5 +454,10 @@
 
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({
+      offset: 200,
+      duration: 1000
+    })</script>
   </body>
 </html>
