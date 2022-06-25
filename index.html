@@ -18,9 +18,9 @@
       body{
         background-color: #F8F9FAFF;
         /* background-image: url("assets/bg.png"); */
-        background-attachment: fixed;
+        background-attachment: absolute;
         background-repeat: no-repeat;
-        background-position: 50% 50%;
+        background-position: 0 0;
         background-size: 500px 500px;
 
         position: relative;
@@ -29,6 +29,10 @@
 
       main {
         padding-bottom: 15rem;
+      }
+      
+      main p {
+        font-size: 1.1rem;
       }
 
       /* Override Bootstrap */
@@ -95,10 +99,10 @@
                 <a class="nav-link" href="#tech">Tech</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="#experience">Experience</a>
+                <a class="nav-link"  href="#work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="#work">Work</a>
+                <a class="nav-link"  href="#experience">Experience</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link"  href="#certificate">Certificate</a>
@@ -120,13 +124,13 @@
         <div class="row p-5" style="background-color: rgb(25, 135, 84, 0.9); height: 38rem;" data-aos="slide-down">
 
           <div class="col mb-lg-0 text-center align-self-center" data-aos="slide-down">
-            <img src="assets/profile-pic.webp" alt="" style="width: 225px; border-radius: 200px;">
+            <img src="assets/profile-pic.webp" alt="" style="width: 225px; border-radius: 200px; box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;">
           </div>
 
           <div class="col-lg-8 mt-lg-0 mt-4 text-sm-start text-center align-self-center" data-aos="slide-down">
             <p class="text-light">Hi There! i'm</p>
             <h1 class="text-light">Lucky</h1>
-            <h5 class="text-light display-5">Freelance Web & Desktop App Developer</h5>
+            <h5 class="text-light display-5">Web & Desktop App Developer</h5>
             <br>
             <a class="btn btn-outline-light" href="assets/cv-lucky-wuntu.pdf" target="_blank">Download CV</a>
           </div>
@@ -136,16 +140,16 @@
 
       <!-- About -->
       <div id="about" class="container-fluid mb-5">
-        <div class="row p-5" data-aos="fade-right">
+        <div class="row p-5 text-center" data-aos="fade-right">
 
-          <div class="row mb-4">
-            <div class="col">
+          <div class="row mb-4 justify-content-center">
+            <div class="col-6">
               <h4 class="text-success">ABOUT ME</h4>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-6">
               <!-- <p class="text-secondary"><em>I'm currently studying Informatics Engineering at one of the universities in Indonesia. Interested in web development, software development, tinkering hardware, and learn something new. I can do both back-end and front-end, but i prefer to work with the back-end.</em></p> -->
               <p class="text-secondary"><em>I'm a Software Developer specialized on web development. I can do both back-end and front-end, but most of the time i work with the back-end using JavaScript on Node.js runtime. Other than web development, i can develop desktop application using .NET C#.</em></p>
               <p class="text-secondary"><em>p.s. Still working on this page, might update soon!</em></p>
@@ -160,13 +164,11 @@
         <div class="row p-5" style="background-color: rgb(25, 135, 84, 0.9);">
           
           <div class="row">
-            <div class="col-sm-6 d-sm-block d-none col-12 align-self-center text-center" data-aos="fade-left">
+            <div class="col-6 d-lg-block d-none align-self-center text-center" data-aos="fade-left">
               <img class="img-fluid" src="assets/bg.png" alt="" style="height: 15rem;">
             </div>
 
-            <!-- <div class="col-sm-6 col-12 mt-lg-0 mt-5 text-sm-start text-end"> -->
-            <!-- <div class="col-sm-6 col-12 text-sm-start text-end"> -->
-            <div class="col-sm-6 col-12" data-aos="fade-right">
+            <div class="col-lg-6 col-sm-12 text-center text-lg-start" data-aos="fade-right">
 
               <div class="row mb-4">
                 <div class="col">
@@ -181,7 +183,7 @@
               </div>
               <div class="row mb-2">
                 <div class="col">
-                  <p class="text-light"><em>JavaScript - C# - HTML - CSS - Sass - TypeScript</em></p>
+                  <p class="text-light"><em>JavaScript - C# - HTML - CSS - TypeScript</em></p>
                 </div>
               </div>
               <div class="row">
@@ -204,16 +206,6 @@
                   <p class="text-light"><em>MongoDB</em></p>
                 </div>
               </div>
-              <div class="row">
-                <div class="col">
-                  <h6 class="text-light">• Tools</h6>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <p class="text-light"><em>Visual Studio Code - Git - Docker - Postman - Visual Studio 2019</em></p>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -222,53 +214,19 @@
         </div>
       </div>
       
-      <!-- Experience -->
-      <div id="experience" class="container-fluid mb-5">
-        <div class="row p-5" data-aos="fade-right">
-
-          <div class="row mb-4">
-            <div class="col">
-              <h4 class="text-success">EXPERIENCE</h4>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col">
-              <h6 class="text-success">• Freelance</h6>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <p class="text-secondary"><em>Web & Software Development (2020 - Present)</em></p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col">
-              <h6 class="text-success">• Department of Communication And Informatics</h6>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <p class="text-secondary"><em>E-Government (2021)</em></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
       <!-- Work -->
       <div id="work" class="container-fluid mb-5">
-        <div class="row justify-content-center" style="background-color: rgb(25, 135, 84, 0.9);" data-aos="slide-up" data-aos-offset="0">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-offset="0">
 
           <div class="row mb-4 mt-5">
             <div class="col">
-              <h4 class="text-light text-center display">LATEST WORK</h4>
+              <h4 class="text-success text-center display">MY LATEST WORK</h4>
             </div>
           </div>
 
           <div class="row mb-4 justify-content-center">
             <div class="col-md-10 col-12">
-              <div id="workCarousel" class="carousel carousel-dark slide mb-4" data-bs-ride="carousel">
+              <div id="workCarousel" class="carousel carousel-dark slide mb-4" data-bs-ride="carousel" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="3500">
                     <img src="assets/project/wailan.webp" class="d-block w-100" alt="...">
@@ -319,13 +277,48 @@
           </div>
 
           <div class="row">
-            <div class="col text-light text-center">
+            <div class="col text-success text-center">
               <p>More project at:</p>
             </div>
           </div>
           <div class="row mb-5">
             <div class="col text-center">
-              <h6><img src="assets/github.png" style="width: 1.5rem; filter: invert(100%);" alt=""><a class="text-light" href="https://github.com/valenoirs" target="_blank" style="text-decoration: none;"> https://github.com/valenoirs</a></h6>
+              <h6><img src="assets/github.png" style="width: 1.5rem;" alt=""><a class="text-muted" href="https://github.com/valenoirs" target="_blank" style="text-decoration: none;"> https://github.com/valenoirs</a></h6>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- Experience -->
+      <div id="experience" class="container-fluid mb-5" style="background-color: rgb(25, 135, 84, 0.9);">
+        <div class="row p-5 text-center text-lg-start" data-aos="fade-right">
+
+          <div class="row mb-4">
+            <div class="col">
+              <h4 class="text-light">EXPERIENCE</h4>
+            </div>
+          </div>
+
+          <div class="row" >
+            <div class="col">
+              <h6 class="text-light">• Freelance Web Developer | 2020 - Present</h6>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col">
+              <p class="text-light" style="font-size: 1rem;"><em>- Design & Develop web-based application based on client requirement</em></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <h6 class="text-light">• Department of Communication And Informatics | 2021</h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="text-light" style="font-size: 1rem;"><em>- E-Government</em></p>
             </div>
           </div>
 
@@ -463,7 +456,7 @@
 
     </main>
 
-    <footer class="footer" style="position: absolute; bottom: 0; width: 100%;">
+    <footer id="contact" class="footer" style="position: absolute; bottom: 0; width: 100%;">
       <div class="container-fluid" style="background-color: rgba(25, 135, 84, 0.9);">
         <div class="row d-flex align-items-center" style="height: 100%;">
           <div class="row align-items-center mt-5 mb-4">
