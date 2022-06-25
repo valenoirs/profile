@@ -31,10 +31,6 @@
         padding-bottom: 15rem;
       }
       
-      main p {
-        font-size: 1.1rem;
-      }
-
       /* Override Bootstrap */
       .navbar {
         background-color: rgba(25, 135, 84, 0.9);
@@ -132,7 +128,7 @@
             <h1 class="text-light">Lucky</h1>
             <h5 class="text-light display-5">Web & Desktop App Developer</h5>
             <br>
-            <a class="btn btn-outline-light" href="assets/cv-lucky-wuntu.pdf" target="_blank">Download CV</a>
+            <a class="btn btn-outline-light" href="assets/CV.pdf" target="_blank">Download CV</a>
           </div>
           
         </div>
@@ -152,7 +148,6 @@
             <div class="col-sm-12 col-lg-6">
               <!-- <p class="text-secondary"><em>I'm currently studying Informatics Engineering at one of the universities in Indonesia. Interested in web development, software development, tinkering hardware, and learn something new. I can do both back-end and front-end, but i prefer to work with the back-end.</em></p> -->
               <p class="text-secondary"><em>I'm a Software Developer specialized on web development. I can do both back-end and front-end, but most of the time i work with the back-end using JavaScript on Node.js runtime. Other than web development, i can develop desktop application using .NET C#.</em></p>
-              <p class="text-secondary"><em>p.s. Still working on this page, might update soon!</em></p>
             </div>
           </div>
           
@@ -164,8 +159,8 @@
         <div class="row p-5" style="background-color: rgb(25, 135, 84, 0.9);">
           
           <div class="row">
-            <div class="col-6 d-lg-block d-none align-self-center text-center" data-aos="fade-left">
-              <img class="img-fluid" src="assets/bg.png" alt="" style="height: 15rem;">
+            <div class="col-6 d-lg-block d-none align-self-center text-center" data-aos="fade-left" data-aos-offset="0">
+              <pre id="canvas" style="color: white; white-space: pre;"></pre>
             </div>
 
             <div class="col-lg-6 col-sm-12 text-center text-lg-start" data-aos="fade-right">
@@ -178,7 +173,7 @@
 
               <div class="row ">
                 <div class="col">
-                  <h6 class="text-light">• Language</h6>
+                  <h6 class="text-light display-6" style="font-size: 1.5rem;">Language</h6>
                 </div>
               </div>
               <div class="row mb-2">
@@ -188,7 +183,7 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <h6 class="text-light">• Framework & Library</h6>
+                  <h6 class="text-light display-6" style="font-size: 1.5rem;">Framework & Library</h6>
                 </div>
               </div>
               <div class="row mb-2">
@@ -198,7 +193,7 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <h6 class="text-light">• Database</h6>
+                  <h6 class="text-light display-6" style="font-size: 1.5rem;">Database</h6>
                 </div>
               </div>
               <div class="row mb-2">
@@ -228,41 +223,51 @@
             <div class="col-md-10 col-12">
               <div id="workCarousel" class="carousel carousel-dark slide mb-4" data-bs-ride="carousel" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;">
                 <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="3500">
-                    <img src="assets/project/wailan.webp" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6 class="text-success">WAILAN (2021)</h6>
-                      <a class="text-muted" href="https://github.com/valenoirs/WAILAN" target="_blank" style="text-decoration: none;">https://github.com/valenoirs/WAILAN (private)</a>
+                  <a href="https://github.com/valenoirs/WAILAN" target="_blank" style="text-decoration: none;">
+                    <div class="carousel-item active" data-bs-interval="3500">
+                      <img src="assets/project/wailan.webp" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h6 class="text-success">WAILAN (2021)</h6>
+                        <a class="text-muted" href="https://github.com/valenoirs/WAILAN" target="_blank" style="text-decoration: none;">https://github.com/valenoirs/WAILAN (private)</a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="3500">
-                    <img src="assets/project/inventaris.webp" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6 class="text-success">Sistem Inventaris (2022)</h6>
-                      <a class="text-light" href="https://github.com/valenoirs/codename-UNIMA-002" target="_blank" style="text-decoration: none;">https://github.com/valenoirs/codename-UDLSM-M</a>
+                  </a>
+                  <a href="https://github.com/valenoirs/sistem-manajemen-inventaris" target="_blank" style="text-decoration: none;">
+                    <div class="carousel-item" data-bs-interval="3500">
+                      <img src="assets/project/inventaris.webp" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h6 class="text-success">Sistem Manajemen Inventaris (2022)</h6>
+                        <a class="text-light" href="https://github.com/valenoirs/sistem-manajemen-inventaris" target="_blank" style="text-decoration: none;">https://github.com/valenoirs/sistem-manajemen-inventaris</a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="3500">
-                    <img src="assets/project/agenda.webp" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6 class="text-success">Sistem Manajemen Agenda (2022)</h6>
-                      <a class="text-light" href="https://github.com/valenoirs/codename-UNIMA-001" target="_blank" style="text-decoration: none;">https://github.com/valenoirs/codename-UDLSM-M</a>
+                  </a>
+                  <a href="https://github.com/valenoirs/sistem-manajemen-agenda" target="_blank" style="text-decoration: none;">
+                    <div class="carousel-item" data-bs-interval="3500">
+                      <img src="assets/project/agenda.webp" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h6 class="text-success">Sistem Manajemen Agenda (2022)</h6>
+                        <a class="text-light" href="https://github.com/valenoirs/sistem-manajemen-agenda" target="_blank" style="text-decoration: none;">https://github.com/valenoirs/sistem-manajemen-agenda</a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="3500">
-                    <img src="assets/project/clovr.jpeg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6 class="text-success">CLOVR E-Commerce (2021)</h6>
-                      <a class="text-muted" href="https://github.com/valenoirs/codename-UDLSM-M" target="_blank" style="text-decoration: none;">https://github.com/valenoirs/codename-UDLSM-M</a>
+                  </a>
+                  <a href="https://github.com/valenoirs/clovr-e-commerce" target="_blank" style="text-decoration: none;">
+                    <div class="carousel-item" data-bs-interval="3500">
+                      <img src="assets/project/clovr.jpeg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h6 class="text-success">CLOVR E-Commerce (2021)</h6>
+                        <a class="text-muted" href="https://github.com/valenoirs/clovr-e-commerce" target="_blank" style="text-decoration: none;">https://github.com/valenoirs/clovr-e-commerce</a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="3500">
-                    <img src="assets/project/ukm.jpeg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h6 class="text-success">De La Salle Manado University UKM (2021)</h6>
-                      <a class="text-muted" href="https://github.com/valenoirs/codename-UDLSM-D" target="_blank" style="text-decoration: none;">https://github.com/valenoirs/codename-UDLSM-D</a>
+                  </a>
+                  <a href="https://github.com/valenoirs/sistem-manajemen-ukm" target="_blank" style="text-decoration: none;">
+                    <div class="carousel-item" data-bs-interval="3500">
+                      <img src="assets/project/ukm.jpeg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h6 class="text-success">De La Salle Manado University UKM (2021)</h6>
+                        <a class="text-muted" href="https://github.com/valenoirs/sistem-manajemen-ukm" target="_blank" style="text-decoration: none;">https://github.com/valenoirs/sistem-manajemen-ukm</a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -287,12 +292,18 @@
             </div>
           </div>
 
+          <!-- <div class="row mb-5">
+            <div class="col text-center">
+              <h6><a class="btn btn-outline-success" href="https://github.com/valenoirs" target="_blank" style="text-decoration: none;"><img src="assets/github.png" style="width: 1.5rem;" alt=""> See More At</a>
+            </div>
+          </div> -->
+
         </div>
       </div>
       
       <!-- Experience -->
       <div id="experience" class="container-fluid mb-5" style="background-color: rgb(25, 135, 84, 0.9);">
-        <div class="row p-5 text-center text-lg-start" data-aos="fade-right">
+        <div class="row p-5 text-center" data-aos="fade-right">
 
           <div class="row mb-4">
             <div class="col">
@@ -302,23 +313,23 @@
 
           <div class="row" >
             <div class="col">
-              <h6 class="text-light">• Freelance Web Developer | 2020 - Present</h6>
+              <h6 class="display-6 text-light" style="font-size: 1.5rem;">• Freelance Web Developer | 2020 - Present</h6>
             </div>
           </div>
           <div class="row mb-4">
             <div class="col">
-              <p class="text-light" style="font-size: 1rem;"><em>- Design & Develop web-based application based on client requirement</em></p>
+              <p class="text-light"><em>- Design & Develop web-based application based on client requirement</em></p>
             </div>
           </div>
 
           <div class="row">
             <div class="col">
-              <h6 class="text-light">• Department of Communication And Informatics | 2021</h6>
+              <h6 class="display-6 text-light" style="font-size: 1.5rem;">• Department of Communication And Informatics | 2021</h6>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <p class="text-light" style="font-size: 1rem;"><em>- E-Government</em></p>
+              <p class="text-light"><em>- E-Government</em></p>
             </div>
           </div>
 
@@ -482,9 +493,8 @@
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({
-      offset: 100,
-      duration: 1000
-    })</script>
+    <!-- Mine -->
+    <script src="assets/script/aos.js"></script>
+    <script src="assets/script/donut.js"></script>
   </body>
 </html>
