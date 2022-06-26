@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    background-color: #F8F9FAFF;
+    /* background-image: url("assets/bg.png"); */
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 500px 500px;
+
+    position: relative;
+    min-height: 100%;
+  }
+
+  main {
+    padding-bottom: 15rem;
+  }
+  
+  /* Override Bootstrap */
+  .navbar {
+    background-color: rgba(25, 135, 84, 0.9);
+    /* background-color: rgba(25, 135, 84, 0.300); */
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+    font-weight: 350;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+    /* background-color: #F5F5F5; */
+    background-color: #baeebd;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    /* background-color: #F5F5F5; */
+    background-color: #baeebd;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.1);
+    background-image: -webkit-linear-gradient(330deg, #baeeda 0%, #2F9265FF 100%);
+    background-image: linear-gradient(120deg, #baeebd 0%, #2F9265FF 100%);
+    /* background-image: -webkit-linear-gradient(330deg, #baeeda 0%, #f5576c 100%);
+    background-image: linear-gradient(120deg, #baeebd 0%, #f5576c 100%); */
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2F9265FF;
+  }
